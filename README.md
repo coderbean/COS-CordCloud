@@ -7,9 +7,10 @@
 3. 对于不同倍率的节点做了区分，倍率低于 3 的自动加入到测试列表，倍率高于 2 的可以自己选择
 
 # 配置文件
-config.json
+config-template.json 仅仅用作举例，自己的配置需要重命名为 config.json
 
 ## 举例
+config.json
 ```json
 {
     "rule_url": "https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/LAZY_RULES/clash.yaml",

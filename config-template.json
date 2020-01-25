@@ -1,0 +1,20 @@
+{
+    "rule_url": "https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/LAZY_RULES/clash.yaml",
+    "url": "https://www.cordcord.xyz/link/xxxx?mu=0",
+    "append_name": [
+        "vmessBDW"
+    ],
+    "china_city_list": [
+        "上海",
+        "徐州",
+        "深圳",
+        "北京"
+    ],
+    "input_name": "xxxx.yaml",
+    "output_name": "xxxx.yaml",
+    "upload_key": "CordCloud/xxxx.yaml",
+    "cos_bucket": "public-xxxx",
+    "cos_secret_id": "xxxx",
+    "cos_secret_key": "xxxx",
+    "cos_region": "ap-xxxx"
+}
