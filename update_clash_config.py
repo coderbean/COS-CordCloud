@@ -105,7 +105,7 @@ def update(intput_name, output_name, name_list, yaml_list):
                     '''- { name: "auto", type: url-test, proxies:'''):
                 url_test_list = config['append_name']
                 for name in name_list:
-                    if ('倍率:0.' in name or name.endswith('(倍率:1.')
+                    if ('倍率:0' in name or name.endswith('(倍率:1.')
                             or '(倍率:2' in name
                             ) or '(倍率:2' in name and '[国内]' not in name:
                         url_test_list.append(name)
