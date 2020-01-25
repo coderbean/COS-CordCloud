@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 import base64
 import urllib.request
 import os
@@ -160,7 +161,7 @@ def download_template(config, client):
 
 
 def get_config():
-    f = open('config.json', 'r')
+    f = open('config.json', 'r', encoding = 'utf-8')
     text = f.read()
     f.close()
     config = json.loads(text)

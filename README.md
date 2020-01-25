@@ -52,3 +52,31 @@ config.json
 
 # 推荐用法
 在自己的 VPS 上利用定时任务触发该脚本。通过 COS 更新本地的订阅
+
+
+# 部署
+
+## 脚本
+```shell
+git clone https://github.com/coderbean/COS-CordCloud.git
+cd ./COS-CordCloud/
+python3 -m venv ./venv
+source ./venv/bin/activate
+pip install -r requirements.txt
+cp config-template.json config.json # 复制后并填写相关信息
+python update_clash_config.py # 测试并查看结果
+```
+
+## 定时任务（Ubuntu 16 为例子）
+
+每小时执行一次
+`0 */1 * * * cd /root/script/COS-CordCloud/ && source ./venv/bin/activate && python update_clash_config.py && deactivate`
+
+crontab 配置
+```shell
+apt install cron # 安装cronie
+sudo systemctl enable cron.service; sudo systemctl start cron.service # 开通并开启cronie后台服务
+touch ~/MyCrontab && vim ~/MyCrontab # 建立一个MyCrontab（名字可以随便取）的文件并编辑之。
+crontab ~/MyCrontab # 载入MyCrontab计划到cron服务模块中
+crontab -l # 查看crontab计划，看看是否一切就绪
+```

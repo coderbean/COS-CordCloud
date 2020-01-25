@@ -1,8 +1,6 @@
-autopep8==1.5
 certifi==2019.11.28
 chardet==3.0.4
 cos-python-sdk-v5==1.7.7
-dicttoxml==1.7.4
 idna==2.8
 pycodestyle==2.5.0
 requests==2.22.0
