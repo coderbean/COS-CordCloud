@@ -1,0 +1,7 @@
+/venv
+/.idea
+/.vscode
+.DS_Store
+config.yaml
+template.yaml
+config.json
