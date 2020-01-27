@@ -76,7 +76,7 @@ python update_clash_config.py # 测试并查看结果
 ## 定时任务（Ubuntu 16 为例子）
 
 每小时执行一次
-`0 */1 * * * cd /root/script/COS-CordCloud/ && source ./venv/bin/activate && python update_clash_config.py && deactivate`
+`0 */1 * * * "$(command -v bash)" -c 'cd /root/script/COS-CordCloud/ && source ./venv/bin/activate && python update_clash_config.py >> /tmp/cron_log.txt && deactivate'`
 
 crontab 配置
 ```shell
